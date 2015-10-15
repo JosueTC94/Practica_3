@@ -1,0 +1,95 @@
+#input_boton
+{
+  position:relative;
+  top:-62px;
+}
+
+input
+{
+        border-radius: 10px;
+        height: 30px;
+        border: 1px solid black;
+        position:relative;
+}
+#titulo
+{
+        background:#8A4B08;
+        color:white;
+        border-radius: 25px;
+        padding: 5px 5px 5px 70px;
+}
+#resultado
+{
+  display:none;
+  position:relative;
+  top:-55px;
+  right: -30px;
+}
+
+#calcular_temperatura
+{
+        border-radius:10px;
+        background:#8A4B08;
+        color:white;
+        margin-left: 20px;
+        margin-top: 50px;
+        height: 45px;
+        width: 80px;
+}
+div
+{
+        margin-top: 0px;
+}
+#header
+{
+        margin-left: 15px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: ;
+}
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+#resultado_temperatura
+{
+        display:none;
+}
+
+th, td      { vertical-align: top; text-align: right; font-size:large; }     /* Don't center table cells  */
+#converted  { color: black; font-weight: bold; font-size:large; right: 7px; position:relative;  margin-left: 15px;      }     /* Calculated values in bold */
+
+body
+{
+ background-color:#D8D8D8;  /* blue */
+ font-size:large;
+ /*font-family: "Lucida Sans Typewrite", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;*/
+ font-family: "sans-serif";
+}
+
+h1 {
+    font-weight: normal;
+    font-family: "Brush Script MT", cursive;
+    background: #8A4B08;
+    padding: 5px 15px;
+    color: white;
+    display:inline-block;
+    border-radius: 10px 10px 10px 10px;
+}
