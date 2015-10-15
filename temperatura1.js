@@ -24,7 +24,7 @@ function medida(valor_,tipo_)
 	this.Valor = valor_;
 	this.Tipo = tipo_;
 }
-//hola caracola. Que estaba yo aquí haciendo vectores dispersos para si te servía para algo, yo q se, por ayudar.
+
 
 medida.prototype.set_valor = function(valor_)
 {
@@ -96,16 +96,19 @@ function calculate()
 				{
 						t1.Cambio_aF();
 						result = t1.get_valor();
-						result = result.toFixed(2) + " Farenheit; Categoria:"+t1.Categoria;
+						result = result.toFixed(2) + " Farenheit";
 				}
 				else
 				{
 						t1.Cambio_aC();
 						result = t1.get_valor();
-						result = result.toFixed(2) + " Celsius; Categoria:"+t1.Categoria;
+						result = result.toFixed(2) + " Celsius";
 				}
 			imprimir_resultado(result);
-		}
+	}else
+	{
+		converted.innerHTML = "ERROR! Try something like '-4.2C' instead";
+	}
 }
 
 function imprimir_resultado(resultado)
