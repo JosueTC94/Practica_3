@@ -1,7 +1,7 @@
 {
-  "name": "Practica2_Conversor_Temperatura-gh-pages",
+  "name": "Practica3_def",
   "version": "0.0.1",
-  "description": "ULL ESIT Grado de Informatica. 4º .Sistemas y Tecnologias Web. Practica 3",
+  "description": "ULL ESIT Grado en Ingenieria Informatica. Cuarto Curso. Sistemas y Tecnologias Web",
   "main": "gulpfile.js",
   "directories": {
     "test": "tests"
@@ -17,21 +17,23 @@
     "gulp-util": "~3.0.6"
   },
   "devDependencies": {
-    "mocha": "~2.3.3"
+    "mocha": "~2.3.3",
+    "sinon": "~1.17.1",
+    "blanket": "~1.1.7"
   },
   "scripts": {
     "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/JosueTC94/Practica3.git"
+    "url": "git://github.com/JosueTC94/Practica_3.git"
   },
   "keywords": [
     "regexp"
   ],
-  "author": "Josue Toledo Castro . Alu0100763492",
+  "author": "Josue Toledo Castro. Alu0100763492",
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/JosueTC94/Practica3/issues"
+    "url": "https://github.com/JosueTC94/Practica_3/issues"
   }
 }

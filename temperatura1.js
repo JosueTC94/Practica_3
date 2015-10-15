@@ -109,5 +109,6 @@ function imprimir_resultado(resultado)
 {
 //	alert("Resultado->"+resultado);
 	$("#resultado").fadeIn();
-	$("#converted").html(resultado);
+	//$("#converted").html(resultado);
+	converted.innerHTML = resultado;
 }
