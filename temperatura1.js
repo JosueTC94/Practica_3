@@ -13,7 +13,8 @@ $(document).ready(function()
 	});
 	$("#calcular_temperatura").click(function()
 	{
-			conversor();
+		//	var d = $("#original").val();
+			calculate();
 	});
 });
 
@@ -74,15 +75,17 @@ temperatura.prototype.Cambio_aF = function()
 {
 	this.Valor = (this.Valor * 9/5)+32;
 }
-function conversor()
+function calculate()
 {
 	//Caso solo para temperatura
-	dato = $("#original").val();
 	var result;
+	var original = document.getElementById("original");
+	var temp = original.value;
+
 	var t1 = new temperatura();
 
 	var expresion_regular = t1.regexp;
-	var m = dato.match(expresion_regular);
+	var m = temp.match(expresion_regular);
 
 	if(m)
 	{
@@ -92,7 +95,7 @@ function conversor()
 				if( t1.get_tipo() =='c' || t1.get_tipo() == 'C')
 				{
 						t1.Cambio_aF();
-						result = t1.get_Valor();
+						result = t1.get_valor();
 						result = result.toFixed(2) + " Farenheit; Categoria:"+t1.Categoria;
 				}
 				else
