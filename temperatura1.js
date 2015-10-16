@@ -43,7 +43,7 @@ medida.prototype.get_tipo = function()
 {
 	return this.Tipo;
 }
-/*
+
 function longitud()
 {
 	medida.call(this,valor,tipo);
@@ -57,7 +57,7 @@ function masa(valor,tipo)
 		this.categoria = "Unidad de masa";
 }
 masa.prototype = new medida();
-*/
+
 
 function temperatura(valor,tipo)
 {
@@ -113,8 +113,6 @@ function calculate()
 
 function imprimir_resultado(resultado)
 {
-//	alert("Resultado->"+resultado);
 	$("#resultado").fadeIn();
-	//$("#converted").html(resultado);
 	converted.innerHTML = resultado;
 }
